@@ -19,4 +19,11 @@ public class UserQuery {
             INSERT INTO AccountVerifications (user_id, url)
             VALUES (:userId, :url)
             """;
+
+    public static final String SELECT_USER_BY_EMAIL_QUERY =
+            """
+            SELECT *
+            FROM Users
+            WHERE email = :email
+            """;
 }
